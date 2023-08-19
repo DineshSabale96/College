@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section class="header">
+        <nav>
+           
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html.html">About</a></li>
+                    <li><a href="Course.html.html">Course</a></li>
+                    <li><a href="campus.html.html">Campus</a></li>
+                    <li><a href="Facilities.html.html">Facilities</a></li>
+                    <li><a href="college event.html">Event</a></li>
+                    <li><a href="contact.html.html">Contact</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <p>Phaltan Education Society’s,
+                Mudhoji college, Phaltan.
+               </p>
+         <h1>Department of Computer & Management</h1>
+      
+     </div>
+    </section>
+
+    <!--COURSE-->
+
+    <section class="course">
+        <pre>
+        <h1>Course We Offers</h1>
+        <p>There Are Three Degree Courses in IT deparment.</p> </pre>
+          
+        <div class="row">
+
+            <div class="course-col">
+                <h2><a href="Bca.html">BCA</a></h2>
+                <p>The term BCA stands for Bachelor of Computer Applications.
+                    A three-year undergraduate degree in technology and computer 
+                    applications is known as a Bachelor of Computer Applications (BCA).
+                </p>
+                   
+                   
+            </div>
+            <div class="course-col">
+                <h2><a href="Bcs.html">BCS</a></h2>
+                <p>The Bachelor of Computer Science (abbreviated BCompSc or BCS)
+                     is a bachelor's degree awarded by some universities for 
+                     completion of an undergraduate program in computer science.
+                </p>
+            </div>  
+                <div class="course-col">
+                    <h2><a href="Bba.html">BBA</a></h2>
+                    <p>BBA or Bachelors of Business Administration is an undergraduate
+                        degree course.For students who wish to build a career in the
+                         management field, BBA is a good option to opt.
+                    </p>
+               </div>
+        </div>
+      
+    </section>
+    <!--CAMPUS-->
+    <section class="campus">
+      
+   <h1>Campus</h1>
+
+   <div class="gallery-wrap">
+    <img src="back.png" id="backBtn">
+    <div class="gallery">
+        <div>
+            <span><img src="campus1.jpg"></span>
+            <span><img src="campus2.jpg"></span>
+            <span><img src="campus5.jpg"></span>
+        </div>
+        <div>
+            <span><img src="campus6.jpg"></span>
+            <span><img src="campus7.jpg"></span>
+            <span><img src="campus8.jpg"></span>
+        </div>
+        <div>
+            <span><img src="campus9.jpg"></span>
+            <span><img src="campus10.jpg"></span>
+            <span><img src="campus11.jpg"></span>
+        </div>
+        <div>
+            <span><img src="campus12.jpg"></span>
+            <span><img src="campus13.jpg"></span>
+            <span><img src="campus14.jpg"></span>
+        </div>
+       </div>
+    <img src="next.png" id="nextBtn">
+   </div>
+   </section>
+    <!--Facilities-->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="lab.jpg">
+                <h3>Lab</h3>
+            </div>
+            <div class="facilities-col">
+                <img src="library.jpg">
+                <h3> Library</h3>
+               
+            </div>
+            <div class="facilities-col">
+                <img src="class.jpg">
+                <h3>Class</h3>
+            </div>
+        </section>
+        <section class="facilities">
+        <div class="row">
+            <div class="facilities-col">
+                    <img src="campus7.jpg">
+                    <h3>Water for student</h3>
+                </div>
+                <div class="facilities-col">
+                    <img src="campus2.jpg">
+                    <h3>Building Campus</h3>
+                </div>
+                <div class="facilities-col">
+                    <img src="campus15.jpg">
+                    <h3>Washroom</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Addimision-->
+
+    <section class="ctn">
+        <h1>Addimision</h1>
+        <a href="contact.html.html" class="hero-btn">Contact</a>
+    </section>
+
+    <!--Footer-->
+    <pre>
+        <div class="footer">Created By - <span>Dinesh,Omkar,Aditya,Kiran</span> 
+            || All Right Reserved || </div> </pre>
+ <!--JAVASCRIPT-->
+<script>
+    let scrollContainer = document.querySelector(".gallery");
+    let backBtn = document.getElementById("backBtn");
+    let nextBtn = document.getElementById("nextBtn");
+   
+    scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+    });
+
+    nextBtn.addEventListener("click",()=>{
+        scrollContainer.style.scrollBehavior = "smooth";
+           scrollContainer.scrollLeft += 900;
+    });
+    backBtn.addEventListener("click",()=>{
+        scrollContainer.style.scrollBehavior = "smooth";
+         scrollContainer.scrollLeft -= 900;
+    });
+
+</script>
+</body>
+</html>

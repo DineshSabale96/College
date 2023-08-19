@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src=""></a>
+            <div class="nav-links" id="navLinks">
+               
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html.html">About</a></li>
+                    <li><a href="Course.html.html">Course</a></li>
+                    <li><a href="campus.html.html">Campus</a></li>
+                    <li><a href="Facilities.html.html">Facilities</a></li>
+                    <li><a href="college event.html">Event</a></li>
+                    <li><a href="contact.html.html">Contact</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+      <h1>Our Campus</h1>
+
+    </div>
+    </section>
+   <!--CAMPUS-->
+   <section class="campus">
+      
+    <h1>Campus</h1>
+ 
+    <div class="gallery-wrap">
+     <img src="back.png" id="backBtn">
+     <div class="gallery">
+         <div>
+             <span><img src="campus1.jpg"></span>
+             <span><img src="campus2.jpg"></span>
+             <span><img src="campus5.jpg"></span>
+         </div>
+         <div>
+             <span><img src="campus6.jpg"></span>
+             <span><img src="campus7.jpg"></span>
+             <span><img src="campus8.jpg"></span>
+         </div>
+         <div>
+             <span><img src="campus9.jpg"></span>
+             <span><img src="campus10.jpg"></span>
+             <span><img src="campus11.jpg"></span>
+         </div>
+         <div>
+             <span><img src="campus12.jpg"></span>
+             <span><img src="campus13.jpg"></span>
+             <span><img src="campus14.jpg"></span>
+         </div>
+        </div>
+     <img src="next.png" id="nextBtn">
+    </div>
+    </section>
+   
+    <!--Footer-->
+    <pre>
+    <div class="footer">Created By - <span>Dinesh,Omkar,Aditya,Kiran</span> 
+        || All Right Reserved || </div> </pre>
+    <!--JAVASCRIPT-->
+    <!--JAVASCRIPT-->
+<script>
+    let scrollContainer = document.querySelector(".gallery");
+    let backBtn = document.getElementById("backBtn");
+    let nextBtn = document.getElementById("nextBtn");
+   
+    scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+    });
+
+    nextBtn.addEventListener("click",()=>{
+        scrollContainer.style.scrollBehavior = "smooth";
+           scrollContainer.scrollLeft += 900;
+    });
+    backBtn.addEventListener("click",()=>{
+        scrollContainer.style.scrollBehavior = "smooth";
+         scrollContainer.scrollLeft -= 900;
+    });
+
+</script>
+</body>
+</html>
